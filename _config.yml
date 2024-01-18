@@ -1,4 +1,5 @@
 # Site
+repository: sproogen/resume-theme
 favicon: images/favicon.ico
 
 # Content configuration version
@@ -47,100 +48,56 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hello, I'm Akhil, an Artificial Intelligence researcher. My expertise spans across Deep Learning, Machine Learning, and Statistical Models, with a strong focus on Digital Image, Signal and Audio Processing and Data Analysis as well as AR/VR technologies. My current role involves research in Computer Vision and Natural Language Processing (NLP) for Computer Aided Diagnostic applications.
   
-  I am skilled  in: <mark>Deep Learning</mark>,  <mark>Computer Vision</mark>, <mark>Signal Processing</mark> and "
+  I am skilled  in: <mark>Deep Learning</mark>,  <mark>Computer Vision</mark>, <mark>Signal</mark> and "
 
-
-# Education Section
-education:
-  - title: Education
-    layout: list
-    content:
-      - layout: left
-        title: University of Rochester
-        caption: August 2022 - August 2024
-        sub_title: PhD, Computer Engineering
-        description: |
-          Relevant Courses: Deep Learning, Biostatistics and Statistics, Causal Inference, Machine Learning, Digital Image Processing, Parallel Computing, Introduction and Advanced course on AR/VR.
-
-      - layout: left
-        title: Fanshawe College
-        caption: August 2020 - August 2021
-        sub_title: Master's, Project Management
-        description: |
-          Relevant Courses: Project Management, Software Lifecycle, Agile, Kanban, various other project workflows, Cost Management, Advanced Communication.
-
-      - layout: left
-        title: Western University
-        caption: August 2019 - August 2020
-        sub_title: Master's, Computer Engineering
-        description: |
-          Relevant Courses: Machine Learning, Advanced Digital Signal Processing, Audio and Speech Processing, Embedded Systems and Embedded Linux, IoT.
-
-      - layout: left
-        title: SRM Institute of Science and Technology
-        caption: August 2015 - May 2019
-        sub_title: Bachelor's, Computer Engineering
-
-# Experience Section
-experience:
-  - title: Experience
-    layout: list
-    content:
-      - layout: left
-        title: University of Rochester
-        link: ur.rochester.edu
-        sub_title: Computer Vision Research Assistant
-        caption: August 2022 - Present
-        description: |
-          Leading a project on detection of indwelling tubes and lines in chest X-rays. Published 5 works as lead author. Currently working on an Image-to-Text Automatic Radiology Report Generation project using NLP.
-
-      - layout: left
-        title: Oz Optics Ltd.
-        link: ozoptics.com
-        sub_title: Machine Learning Software Engineer
-        caption: August 2021 - September 2022
-        description: |
-          Built machine learning-based calibration software. Developed software applications in C++ and Python, interfacing with various communication protocols. Led software and PC GUI design for new products.
-
-# Projects Section
-projects:
-  - title: Projects & Outside Experiences
-    layout: list
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Detecting landmarks in anatomical medical images
-        link: ur.rochester.edu
-        description: |
-          Research project conducted in collaboration with University of Rochester - Imaging Sciences Department and Carestream Health. Developed a Transformer based network for accurately detecting 6 landmark points in a chest X-ray.
+        title: Super awesome project
+        link: github.com/sproogen
+        # link_text: Project Website
+        additional_links:
+          - title:  sproogen/modern-resume-theme
+            icon: fab fa-github
+            url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
-      - layout: top-middle
-        title: BrainScale VR
-        link: ur.rochester.edu
-        description: |
-          NSF/NRT ARVR Graduate Student Trainee project. Developed a Virtual Reality Interactive room research lab for 3D visualization of Brain MR scans.
-
-# Skills Section
-skills:
-  - title: Skills
-    layout: list
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Technical Skills
-        description: |
-          Deep Learning, Computer Vision, Signal Processing, NLP, C#, CUDA, Data Analysis, Flask, Git, C/C++, NumPy, Pytorch, Python, MATLAB, UI/UX Design, Unity, Software Testing, Product Management, OpenCV, SQL, MySQL, R, Power BI
+        title: The Boring Company
+        link: boringcompany.com
+        # link_text: boringcompany.com
+        sub_title: Senior Network System Administrator
+        caption: November 2017 - Present
+        quote: >
+          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
 
-# Footer
-footer_show_references: true
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Harvard University
+        caption: 2010 - 2013
+        sub_title: BSc Computer Science
+        quote: >
+          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
 
-# Build settings
-remote_theme: sproogen/resume-theme
+          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
 
-sass:
-  sass_dir: _sass
-  style: compressed
-
-plugins:
- - jekyll-seo-tag
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
